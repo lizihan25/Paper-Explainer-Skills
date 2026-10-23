@@ -1,0 +1,347 @@
+{
+  "schema_version": 1,
+  "updated": "2026-10-23",
+  "purpose": "Paper explanation style examples for research and non-commercial demonstration",
+  "historical_examples": [
+    {
+      "id": "A",
+      "title": "科研图解",
+      "summary": "像素、特征、动作卷积与递归状态的矢量图解。",
+      "renderer": "Manim CE",
+      "video": "previous/a-paper-schematic.mp4",
+      "poster": "previous/a-paper-schematic.jpg",
+      "poster_time_seconds": 27.833333,
+      "source_filename": "A_Paper_Schematic_EN_ZH_1080p60.mp4",
+      "duration_seconds": 72.35,
+      "size_bytes": 6950567,
+      "sha256": "886d1e547f6c5d524aeba21419232b8c467d130d30635c5c2669c094323e136e",
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080,
+          "r_frame_rate": "60/1"
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "sample_rate": "24000",
+          "r_frame_rate": "0/0"
+        }
+      ],
+      "narration": {
+        "engine": "Breeze TTS 2",
+        "voice_design": "F",
+        "language": "English",
+        "same_track_across_variants": true,
+        "music": false,
+        "license": "BreezeBlue Research and Non-Commercial License v1.1",
+        "synthetic_audio": true
+      },
+      "subtitles": "Chinese above English",
+      "paper": "https://arxiv.org/abs/1906.03853",
+      "paper_excerpts": [],
+      "rights_record": "../THIRD_PARTY.md",
+      "status": "completed_historical_example"
+    },
+    {
+      "id": "B",
+      "title": "张量工作室",
+      "summary": "斜投影特征平面、卷积核及运动场。",
+      "renderer": "Remotion",
+      "video": "previous/b-tensor-studio.mp4",
+      "poster": "previous/b-tensor-studio.jpg",
+      "poster_time_seconds": 27.833333,
+      "source_filename": "B_Tensor_Studio_EN_ZH_1080p60.mp4",
+      "duration_seconds": 72.35,
+      "size_bytes": 7649685,
+      "sha256": "d0ed40f185e88e76e6f09fd3dad84bb1f4191958974f431129bfa7e789f3bb6a",
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080,
+          "r_frame_rate": "60/1",
+          "side_data_list": [
+            {}
+          ]
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "sample_rate": "24000",
+          "r_frame_rate": "0/0"
+        }
+      ],
+      "narration": {
+        "engine": "Breeze TTS 2",
+        "voice_design": "F",
+        "language": "English",
+        "same_track_across_variants": true,
+        "music": false,
+        "license": "BreezeBlue Research and Non-Commercial License v1.1",
+        "synthetic_audio": true
+      },
+      "subtitles": "Chinese above English",
+      "paper": "https://arxiv.org/abs/1906.03853",
+      "paper_excerpts": [],
+      "rights_record": "../THIRD_PARTY.md",
+      "status": "completed_historical_example"
+    },
+    {
+      "id": "C",
+      "title": "论文证据导览",
+      "summary": "原 Fig. 3 局部导览与 Table II 实验解释。",
+      "renderer": "Remotion",
+      "video": "previous/c-research-editorial.mp4",
+      "poster": "previous/c-research-editorial.jpg",
+      "poster_time_seconds": 8.983333,
+      "source_filename": "C_Research_Editorial_EN_ZH_1080p60.mp4",
+      "duration_seconds": 72.35,
+      "size_bytes": 9148403,
+      "sha256": "5abf08ba6ed943373da99a414c64ef7f06e227981f4c33fd43374c0e07650d0e",
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080,
+          "r_frame_rate": "60/1",
+          "side_data_list": [
+            {}
+          ]
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "sample_rate": "24000",
+          "r_frame_rate": "0/0"
+        }
+      ],
+      "narration": {
+        "engine": "Breeze TTS 2",
+        "voice_design": "F",
+        "language": "English",
+        "same_track_across_variants": true,
+        "music": false,
+        "license": "BreezeBlue Research and Non-Commercial License v1.1",
+        "synthetic_audio": true
+      },
+      "subtitles": "Chinese above English",
+      "paper": "https://arxiv.org/abs/1906.03853",
+      "paper_excerpts": [
+        "DensePhysNet Figure 3",
+        "DensePhysNet Table II"
+      ],
+      "rights_record": "../THIRD_PARTY.md",
+      "status": "completed_historical_example"
+    }
+  ],
+  "new_examples": {
+    "status": "completed",
+    "items": [
+      {
+        "id": "nocturne",
+        "title": "黑底数学剧场",
+        "summary": "在黑色画布上解释粒子状态、消息传播与层级。",
+        "renderer": "Pillow and FFmpeg",
+        "video": "current/dpi-nocturne.mp4",
+        "poster": "current/dpi-nocturne.jpg",
+        "poster_time_seconds": 25.44,
+        "source_filename": "DPI_nocturne.mp4",
+        "duration_seconds": 47.208333,
+        "size_bytes": 3768379,
+        "sha256": "533e4d3e3b9d83166e3c64d13358037a174709fc16c0eaaf012595eaa3b98dd3",
+        "streams": [
+          {
+            "index": 0,
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1280,
+            "height": 720,
+            "r_frame_rate": "24/1",
+            "nb_frames": "1133"
+          },
+          {
+            "index": 1,
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "sample_rate": "48000",
+            "channels": 2,
+            "r_frame_rate": "0/0",
+            "nb_frames": "2214"
+          }
+        ],
+        "narration": {
+          "engine": "Breeze TTS 2",
+          "mode": "ref_clone_tata",
+          "reference": "Fixed synthetic F reference; not a real-person voice clone",
+          "segmentation": "One continuous paragraph",
+          "speed_factor": 1.25,
+          "synthetic_audio": true,
+          "same_mix_across_variants": true,
+          "license": "BreezeBlue Research and Non-Commercial License v1.1"
+        },
+        "music": {
+          "title": "Particle Study 01",
+          "tempo_bpm": 78,
+          "composition": "Original procedural electric-piano chord bed; no external samples",
+          "duck_db": 5
+        },
+        "subtitles": {
+          "layout": "Chinese above English",
+          "bilingual": "../source/dpi_styles/subtitles/bilingual.srt",
+          "english": "../source/dpi_styles/subtitles/en.srt",
+          "chinese": "../source/dpi_styles/subtitles/zh.srt"
+        },
+        "paper": "https://arxiv.org/abs/1810.01566",
+        "paper_excerpts": [
+          "DPI-Net Figure 1",
+          "DPI-Net Figure 4(c)"
+        ],
+        "portrait": "Yunzhu Li; official personal website",
+        "rights_record": "../THIRD_PARTY.md",
+        "status": "completed_method_style_comparison",
+        "scope": "Ten-sentence method information flow; not a complete experimental review"
+      },
+      {
+        "id": "microscope",
+        "title": "原图显微镜",
+        "summary": "沿原图平滑定位并解释机制，展示操作后的观测与再优化。",
+        "renderer": "Pillow and FFmpeg",
+        "video": "current/dpi-microscope.mp4",
+        "poster": "current/dpi-microscope.jpg",
+        "poster_time_seconds": 25.44,
+        "source_filename": "DPI_microscope.mp4",
+        "duration_seconds": 47.208333,
+        "size_bytes": 5006552,
+        "sha256": "723fde9dff1ae627b7c2db0d212c01019e6808d9c8a0ebae3798d641c34af42f",
+        "streams": [
+          {
+            "index": 0,
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1280,
+            "height": 720,
+            "r_frame_rate": "24/1",
+            "nb_frames": "1133"
+          },
+          {
+            "index": 1,
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "sample_rate": "48000",
+            "channels": 2,
+            "r_frame_rate": "0/0",
+            "nb_frames": "2214"
+          }
+        ],
+        "narration": {
+          "engine": "Breeze TTS 2",
+          "mode": "ref_clone_tata",
+          "reference": "Fixed synthetic F reference; not a real-person voice clone",
+          "segmentation": "One continuous paragraph",
+          "speed_factor": 1.25,
+          "synthetic_audio": true,
+          "same_mix_across_variants": true,
+          "license": "BreezeBlue Research and Non-Commercial License v1.1"
+        },
+        "music": {
+          "title": "Particle Study 01",
+          "tempo_bpm": 78,
+          "composition": "Original procedural electric-piano chord bed; no external samples",
+          "duck_db": 5
+        },
+        "subtitles": {
+          "layout": "Chinese above English",
+          "bilingual": "../source/dpi_styles/subtitles/bilingual.srt",
+          "english": "../source/dpi_styles/subtitles/en.srt",
+          "chinese": "../source/dpi_styles/subtitles/zh.srt"
+        },
+        "paper": "https://arxiv.org/abs/1810.01566",
+        "paper_excerpts": [
+          "DPI-Net Figure 1",
+          "DPI-Net Figure 4(c)"
+        ],
+        "portrait": "Yunzhu Li; official personal website",
+        "rights_record": "../THIRD_PARTY.md",
+        "status": "completed_method_style_comparison",
+        "scope": "Ten-sentence method information flow; not a complete experimental review"
+      },
+      {
+        "id": "atlas",
+        "title": "纸面自由画布",
+        "summary": "用暖色连续画布串起状态、关系、传播、层级、预测与控制。",
+        "renderer": "Pillow and FFmpeg",
+        "video": "current/dpi-atlas.mp4",
+        "poster": "current/dpi-atlas.jpg",
+        "poster_time_seconds": 25.44,
+        "source_filename": "DPI_atlas.mp4",
+        "duration_seconds": 47.208333,
+        "size_bytes": 3573538,
+        "sha256": "91fc2893a30e3b2430c17dfdbbbf8a414bcc87a5d92ab8a3413ac8e7248a7c4f",
+        "streams": [
+          {
+            "index": 0,
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1280,
+            "height": 720,
+            "r_frame_rate": "24/1",
+            "nb_frames": "1133"
+          },
+          {
+            "index": 1,
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "sample_rate": "48000",
+            "channels": 2,
+            "r_frame_rate": "0/0",
+            "nb_frames": "2214"
+          }
+        ],
+        "narration": {
+          "engine": "Breeze TTS 2",
+          "mode": "ref_clone_tata",
+          "reference": "Fixed synthetic F reference; not a real-person voice clone",
+          "segmentation": "One continuous paragraph",
+          "speed_factor": 1.25,
+          "synthetic_audio": true,
+          "same_mix_across_variants": true,
+          "license": "BreezeBlue Research and Non-Commercial License v1.1"
+        },
+        "music": {
+          "title": "Particle Study 01",
+          "tempo_bpm": 78,
+          "composition": "Original procedural electric-piano chord bed; no external samples",
+          "duck_db": 5
+        },
+        "subtitles": {
+          "layout": "Chinese above English",
+          "bilingual": "../source/dpi_styles/subtitles/bilingual.srt",
+          "english": "../source/dpi_styles/subtitles/en.srt",
+          "chinese": "../source/dpi_styles/subtitles/zh.srt"
+        },
+        "paper": "https://arxiv.org/abs/1810.01566",
+        "paper_excerpts": [
+          "DPI-Net Figure 1",
+          "DPI-Net Figure 4(c)"
+        ],
+        "portrait": "Yunzhu Li; official personal website",
+        "rights_record": "../THIRD_PARTY.md",
+        "status": "completed_method_style_comparison",
+        "scope": "Ten-sentence method information flow; not a complete experimental review"
+      }
+    ]
+  },
+  "total_historical_video_bytes": 23748655,
+  "total_current_video_bytes": 12348469
+}

@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Paper Explainer · 论文讲解样片对比</title>
+  <style>
+    :root{color-scheme:light;font-family:system-ui,-apple-system,"Segoe UI","Microsoft YaHei",sans-serif;background:#f7f6f2;color:#252b2c}
+    body{margin:0;line-height:1.65}main{max-width:1450px;margin:auto;padding:40px 28px 60px}h1{font-size:clamp(28px,4vw,44px);font-weight:650;margin:0 0 14px;letter-spacing:-.035em}h2{font-size:21px;line-height:1.4;margin:18px 0 8px}p{margin:8px 0 18px}.intro{max-width:920px}.eyebrow{color:#53716d;font-size:13px;letter-spacing:.12em}a{color:#246d70;text-underline-offset:3px}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:30px}article{min-width:0}video{width:100%;display:block;background:#151719;aspect-ratio:16/9;border:1px solid #dddcd4;border-radius:7px}article p{font-size:15px;color:#525d5d}.meta{font-size:13px;color:#697471}.note{margin-top:34px;border-top:1px solid #dadbd3;padding-top:22px;max-width:1040px}.links{display:flex;gap:20px;flex-wrap:wrap;font-size:14px}a:focus-visible,video:focus-visible{outline:3px solid #e4ab4b;outline-offset:5px}@media(max-width:1000px){.grid{grid-template-columns:1fr;max-width:850px}main{padding:28px 18px}.grid article{margin-bottom:16px}}
+  </style>
+</head>
+<body>
+<main>
+  <div class="eyebrow">PAPER EXPLAINER · STYLE COMPARISONS</div>
+  <h1>从原图走进模型的信息流</h1>
+  <p class="intro">DPI-Net 新样片用同一段 47.21 秒讲解，对比黑底机制动画、原图导览与连续纸面。输入、动态图、多轮传播、层级、预测和控制依次展开。英文统一参考声线，1.25× 节奏；中上英下字幕，加入轻背景音乐。</p>
+  <div class="links"><a href="../source/dpi_styles/subtitles/bilingual.srt">双语字幕</a><a href="../source/dpi_styles/subtitles/en.srt">英文字幕</a><a href="../source/dpi_styles/subtitles/zh.srt">中文字幕</a><a href="../source/dpi_styles/README.md">源码与运行说明</a></div>
+  <div class="grid">
+    <article>
+      <video controls preload="metadata" playsinline poster="current/dpi-nocturne.jpg" aria-label="Nocturne 黑底数学剧场"><source src="current/dpi-nocturne.mp4" type="video/mp4"><a href="current/dpi-nocturne.mp4">下载 Nocturne</a></video>
+      <h2>Nocturne · 黑底数学剧场</h2>
+      <p>用语义色族和运动消息解释粒子间的影响，展开动态图、多轮传播与层级计算。</p>
+      <div class="meta">720p24 · 47.21 秒 · 3.77 MB</div>
+    </article>
+    <article>
+      <video controls preload="metadata" playsinline poster="current/dpi-microscope.jpg" aria-label="Microscope 原图显微镜"><source src="current/dpi-microscope.mp4" type="video/mp4"><a href="current/dpi-microscope.mp4">下载 Microscope</a></video>
+      <h2>Microscope · 原图显微镜</h2>
+      <p>让原图占据主要画面，逐区定位与放大，直接把解释和论文中的部位对应起来。</p>
+      <div class="meta">720p24 · 47.21 秒 · 5.01 MB</div>
+    </article>
+    <article>
+      <video controls preload="metadata" playsinline poster="current/dpi-atlas.jpg" aria-label="Atlas 纸面自由画布"><source src="current/dpi-atlas.mp4" type="video/mp4"><a href="current/dpi-atlas.mp4">下载 Atlas</a></video>
+      <h2>Atlas · 纸面自由画布</h2>
+      <p>在连续暖色画布中移动观看位置，把输入、传播、预测与控制连接成一条可跟随的路线。</p>
+      <div class="meta">720p24 · 47.21 秒 · 3.57 MB</div>
+    </article>
+  </div>
+  <section class="note">
+    <h2>早期对照：DensePhysNet</h2>
+    <p>下面三段使用相同讲稿与英文合成音轨，介绍特征更新、动作卷积与属性解码实验。每段 72.35 秒，1080p60，中上英下字幕；保留当时的原速和无 BGM 版本。</p>
+  </section>
+  <div class="grid">
+    <article>
+      <video controls preload="metadata" playsinline poster="previous/a-paper-schematic.jpg" aria-label="A 科研图解"><source src="previous/a-paper-schematic.mp4" type="video/mp4"><a href="previous/a-paper-schematic.mp4">下载 A</a></video>
+      <h2>A · 科研图解</h2>
+      <p>用清晰的矢量对象逐步搭起特征、动作条件卷积和递归状态，适合停下来辨认各模块的作用。</p>
+      <div class="meta">Manim CE · 6.95 MB</div>
+    </article>
+    <article>
+      <video controls preload="metadata" playsinline poster="previous/b-tensor-studio.jpg" aria-label="B 张量工作室"><source src="previous/b-tensor-studio.mp4" type="video/mp4"><a href="previous/b-tensor-studio.mp4">下载 B</a></video>
+      <h2>B · 张量工作室</h2>
+      <p>把特征通道画成有深度的平面，让动作产生的卷积核进入表示，强调信息流和空间关系。</p>
+      <div class="meta">Remotion · 7.65 MB</div>
+    </article>
+    <article>
+      <video controls preload="metadata" playsinline poster="previous/c-research-editorial.jpg" aria-label="C 论文证据导览"><source src="previous/c-research-editorial.mp4" type="video/mp4"><a href="previous/c-research-editorial.mp4">下载 C</a></video>
+      <h2>C · 论文证据导览</h2>
+      <p>沿原 Fig. 3 的局部解释机制，再用 Table II 展示实验问题与结果，方便回到原论文继续阅读。</p>
+      <div class="meta">Remotion · 9.15 MB</div>
+    </article>
+  </div>
+  <section class="note">
+    <h2>论文与声音来源</h2>
+    <p>新样片：Yunzhu Li et al., <a href="https://arxiv.org/abs/1810.01566">Learning Particle Dynamics for Manipulating Rigid Bodies, Deformable Objects, and Fluids</a>, ICLR 2019, MIT CSAIL。历史样片：Zhenjia Xu et al., <a href="https://arxiv.org/abs/1906.03853">DensePhysNet: Learning Dense Physical Object Representations via Multi-step Dynamic Interactions</a>, RSS 2019。</p>
+    <p>英文旁白由 Breeze TTS 2 本地合成，用于研究与非商业展示。新样片的背景音乐为原创程序合成的 <em>Particle Study 01</em>，78 BPM；旁白时最多压低 5 dB。论文图表与作者照片作为署名学术讲解摘引，使用条件另列。</p>
+    <nav class="links" aria-label="相关资料"><a href="../README.md">使用说明与四份 prompt</a><a href="../THIRD_PARTY.md">素材与音频条件</a><a href="manifest.json">示例清单</a></nav>
+  </section>
+</main>
+<script>
+  const players = [...document.querySelectorAll('video')];
+  for (const current of players) current.addEventListener('play', () => players.forEach(other => { if (other !== current) other.pause(); }));
+</script>
+</body>
+</html>

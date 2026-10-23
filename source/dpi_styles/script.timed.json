@@ -1,0 +1,86 @@
+{
+  "paper": "Learning Particle Dynamics for Manipulating Rigid Bodies, Deformable Objects, and Fluids",
+  "venue": "ICLR 2019",
+  "team": "MIT CSAIL",
+  "authors": [
+    "Yunzhu Li",
+    "Jiajun Wu",
+    "Russ Tedrake",
+    "Joshua B. Tenenbaum",
+    "Antonio Torralba"
+  ],
+  "duration": 47.208333333333336,
+  "source": "https://arxiv.org/html/1810.01566v2",
+  "sentences": [
+    {
+      "start": 0,
+      "end": 8.14,
+      "en": "DPI-Net, from MIT CSAIL at ICLR 2019, learns particle dynamics for rigid bodies, deformable objects, and fluids.",
+      "zh": "MIT CSAIL 在 ICLR 2019 提出 DPI-Net，学习刚体、可变形物体和流体的粒子动力学。",
+      "scene": "identity"
+    },
+    {
+      "start": 8.14,
+      "end": 12.32,
+      "en": "Its input is a set of particles, carrying positions, velocities, and physical attributes.",
+      "zh": "输入是一组粒子，每个粒子带有位置、速度和物理属性。",
+      "scene": "input"
+    },
+    {
+      "start": 12.32,
+      "end": 15.78,
+      "en": "Nearby particles form an interaction graph, which is rebuilt as the scene changes.",
+      "zh": "相邻粒子构成交互图；场景变化时，连接关系随之重建。",
+      "scene": "dynamic"
+    },
+    {
+      "start": 15.78,
+      "end": 19.19,
+      "en": "Messages pass along these edges, so each particle can respond to its neighbors.",
+      "zh": "消息沿连接边传播，让每个粒子都能响应邻居的影响。",
+      "scene": "local"
+    },
+    {
+      "start": 19.19,
+      "end": 23.03,
+      "en": "Multiple propagation steps carry effects farther through the graph before the next physical time step.",
+      "zh": "在进入下一个物理时刻前，多轮传播将影响传递到图中更远的位置。",
+      "scene": "multistep"
+    },
+    {
+      "start": 23.03,
+      "end": 27.85,
+      "en": "A hierarchy adds a shortcut: particles communicate through cluster roots, spreading information across a whole object.",
+      "zh": "层级结构提供捷径：粒子经由簇的根节点通信，把信息传遍整个物体。",
+      "scene": "hierarchy"
+    },
+    {
+      "start": 27.85,
+      "end": 32.25,
+      "en": "The learned update predicts the next particle state, and repeated updates produce a future trajectory.",
+      "zh": "学习到的更新规则预测下一时刻的粒子状态；反复更新，就得到未来轨迹。",
+      "scene": "prediction"
+    },
+    {
+      "start": 32.25,
+      "end": 37.61,
+      "en": "For control, the system compares that predicted outcome with a target shape, then differentiates the error back to candidate actions.",
+      "zh": "控制时，系统比较预测结果与目标形状，再将误差求导，传回候选动作。",
+      "scene": "gradient"
+    },
+    {
+      "start": 37.61,
+      "end": 41.25,
+      "en": "After executing an action, a new observation restarts prediction and optimization.",
+      "zh": "执行动作后，用新观测重新预测并优化下一步动作。",
+      "scene": "control"
+    },
+    {
+      "start": 41.25,
+      "end": 47.208333333333336,
+      "en": "Dynamic neighborhoods follow motion; repeated messages carry local effects; hierarchy connects distant parts of an object.",
+      "zh": "动态邻域跟随运动更新；多轮消息传播局部影响；层级结构连接物体中相距较远的部分。",
+      "scene": "takeaway"
+    }
+  ]
+}

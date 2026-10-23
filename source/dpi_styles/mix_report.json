@@ -1,0 +1,12 @@
+{
+  "duration": 47.208333333333336,
+  "voice_gain_db": 2.960704348430536,
+  "speed_factor": 1.25,
+  "music": "Original synthesized electric-piano chord bed; 78 BPM; no reused music",
+  "bgm_rms_dbfs": -35.2986590572272,
+  "speech_rms_dbfs": -23.021049822738213,
+  "mix_peak_dbfs": -1.9047350081995322,
+  "music_duck_db": 5,
+  "processing": "constant voice gain, pitch-preserving atempo; no denoising/EQ/compression",
+  "words_asr_match": 0.9899665551839465
+}

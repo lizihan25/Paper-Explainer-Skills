@@ -1,0 +1,14 @@
+{
+  "engine": "Breeze-TTS-2",
+  "mode": "ref_clone_tata",
+  "reference": "reference_F.wav",
+  "reference_text": "Dense Phys Net builds a persistent feature map from repeated interactions. After an action, a new visual observation updates the representation. A prediction branch combines these features with the proposed action to estimate image motion.",
+  "text": "D P I Net, from M I T C SAIL at I C L R twenty nineteen, learns particle dynamics for rigid bodies, deformable objects, and fluids. Its input is a set of particles, carrying positions, velocities, and physical attributes. Nearby particles form an interaction graph, which is rebuilt as the scene changes. Messages pass along these edges, so each particle can respond to its neighbors. Multiple propagation steps carry effects farther through the graph before the next physical time step. A hierarchy adds a shortcut: particles communicate through cluster roots, spreading information across a whole object. The learned update predicts the next particle state, and repeated updates produce a future trajectory. For control, the system compares that predicted outcome with a target shape, then differentiates the error back to candidate actions. After executing an action, a new observation restarts prediction and optimization. Dynamic neighborhoods follow motion; repeated messages carry local effects; hierarchy connects distant parts of an object.",
+  "sample_rate": 24000,
+  "seed": 42,
+  "target_speed_factor": 1.25,
+  "segmentation": "single continuous paragraph",
+  "reference_included": false,
+  "reference_description": "A fixed synthetic F voice reference selected during the previous audition.",
+  "publication_note": "Reference audio and model weights are not bundled; the example videos share one narration and mix."
+}

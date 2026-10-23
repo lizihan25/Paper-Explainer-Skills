@@ -1,0 +1,66 @@
+{
+  "paper": {
+    "title": "Learning Particle Dynamics for Manipulating Rigid Bodies, Deformable Objects, and Fluids",
+    "authors": [
+      "Yunzhu Li",
+      "Jiajun Wu",
+      "Russ Tedrake",
+      "Joshua B. Tenenbaum",
+      "Antonio Torralba"
+    ],
+    "affiliation": "MIT CSAIL",
+    "venue": "ICLR 2019",
+    "url": "https://arxiv.org/html/1810.01566v2",
+    "project": "https://dpi.csail.mit.edu/",
+    "read_sections": [
+      "Figure 1",
+      "3.1",
+      "3.2",
+      "3.3",
+      "Figure 4(c)"
+    ],
+    "verified": "2026-10-23"
+  },
+  "assets": [
+    {
+      "local": "assets/dpi_net_method.png",
+      "source": "https://dpi.csail.mit.edu/imgs/method.png",
+      "description": "Author project method diagram corresponding to paper Figure 1",
+      "rights": "Third-party academic figure; no blanket redistribution permission found; exclude from source publication unless separately cleared",
+      "included_as_standalone_file": false
+    },
+    {
+      "local": "assets/dpi_net_fig4.png",
+      "source": "https://arxiv.org/pdf/1810.01566",
+      "description": "Paper Figure 4, controlled simulation and real-world experiments; this video uses row (c)",
+      "rights": "Third-party paper figure; arXiv non-exclusive perpetual posting license does not grant blanket redistribution rights",
+      "included_as_standalone_file": false
+    },
+    {
+      "local": "assets/yunzhu-li.jpg",
+      "source": "https://yunzhuli.github.io/",
+      "description": "Yunzhu Li official personal-website portrait; recorded 2026-10-22 and cross-checked against the local portrait manifest",
+      "rights": "No blanket redistribution permission confirmed; exclude portrait asset from public source bundle",
+      "download_url": "https://yunzhuli.github.io/files/profile.jpg",
+      "included_as_standalone_file": false
+    }
+  ],
+  "visual_references": [
+    {
+      "url": "https://github.com/3b1b/manim/blob/master/manimlib/default_config.yml",
+      "used": "Full named color-family system; selected semantic colors used in animation",
+      "license": "MIT"
+    },
+    {
+      "url": "https://github.com/3b1b/videos/blob/master/custom_config.yml",
+      "used": "Black background and serif mathematical visual language as design reference",
+      "copied_code": false
+    }
+  ],
+  "limitations": [
+    "Generated diagrams are explanatory illustrations, not trained-model output",
+    "No model or robot was run",
+    "Hierarchy is used for rigid and elastic/plastic objects, not fluid particles",
+    "The short comparison omits numerical benchmarks and ablation review"
+  ]
+}

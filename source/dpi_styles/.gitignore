@@ -1,0 +1,5 @@
+assets/
+renders/
+qa/
+__pycache__/
+*.pyc

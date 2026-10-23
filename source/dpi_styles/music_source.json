@@ -1,0 +1,10 @@
+{
+  "title": "Particle Study 01",
+  "creator": "Original procedural composition for this project",
+  "tempo_bpm": 78,
+  "source": "Original procedural electric-piano synthesis for this example; no external samples.",
+  "samples": "No external recordings or samples",
+  "reused_previous_bgm": false,
+  "mix": "Soft electric-piano chord texture; up to 5 dB ducking under speech",
+  "code_license": "MIT when included with the original code license; third-party narrated media retains its respective license"
+}

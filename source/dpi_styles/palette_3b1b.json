@@ -1,0 +1,17 @@
+{
+  "source":"https://github.com/3b1b/manim/blob/master/manimlib/default_config.yml",
+  "license":"MIT; Copyright (c) 2020-2026 3Blue1Brown LLC",
+  "background":"#000000",
+  "colors": {
+    "blue_e":"#1C758A","blue_d":"#29ABCA","blue_c":"#58C4DD","blue_b":"#9CDCEB","blue_a":"#C7E9F1",
+    "teal_e":"#49A88F","teal_d":"#55C1A7","teal_c":"#5CD0B3","teal_b":"#76DDC0","teal_a":"#ACEAD7",
+    "green_e":"#699C52","green_d":"#77B05D","green_c":"#83C167","green_b":"#A6CF8C","green_a":"#C9E2AE",
+    "yellow_e":"#E8C11C","yellow_d":"#F4D345","yellow_c":"#FFFF00","yellow_b":"#FFEA94","yellow_a":"#FFF1B6",
+    "gold_e":"#C78D46","gold_d":"#E1A158","gold_c":"#F0AC5F","gold_b":"#F9B775","gold_a":"#F7C797",
+    "red_e":"#CF5044","red_d":"#E65A4C","red_c":"#FC6255","red_b":"#FF8080","red_a":"#F7A1A3",
+    "maroon_e":"#94424F","maroon_d":"#A24D61","maroon_c":"#C55F73","maroon_b":"#EC92AB","maroon_a":"#ECABC1",
+    "purple_e":"#644172","purple_d":"#715582","purple_c":"#9A72AC","purple_b":"#B189C6","purple_a":"#CAA3E8",
+    "grey_e":"#222222","grey_d":"#444444","grey_c":"#888888","grey_b":"#BBBBBB","grey_a":"#DDDDDD",
+    "white":"#FFFFFF","black":"#000000","grey_brown":"#736357","dark_brown":"#8B4513","light_brown":"#CD853F","pink":"#D147BD","light_pink":"#DC75CD","green_screen":"#00FF00","orange":"#FF862F","pure_red":"#FF0000","pure_green":"#00FF00","pure_blue":"#0000FF"
+  }
+}

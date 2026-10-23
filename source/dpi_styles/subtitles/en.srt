@@ -1,0 +1,39 @@
+﻿1
+00:00:00,000 --> 00:00:08,140
+DPI-Net, from MIT CSAIL at ICLR 2019, learns particle dynamics for rigid bodies, deformable objects, and fluids.
+
+2
+00:00:08,140 --> 00:00:12,320
+Its input is a set of particles, carrying positions, velocities, and physical attributes.
+
+3
+00:00:12,320 --> 00:00:15,780
+Nearby particles form an interaction graph, which is rebuilt as the scene changes.
+
+4
+00:00:15,780 --> 00:00:19,190
+Messages pass along these edges, so each particle can respond to its neighbors.
+
+5
+00:00:19,190 --> 00:00:23,030
+Multiple propagation steps carry effects farther through the graph before the next physical time step.
+
+6
+00:00:23,030 --> 00:00:27,850
+A hierarchy adds a shortcut: particles communicate through cluster roots, spreading information across a whole object.
+
+7
+00:00:27,850 --> 00:00:32,250
+The learned update predicts the next particle state, and repeated updates produce a future trajectory.
+
+8
+00:00:32,250 --> 00:00:37,610
+For control, the system compares that predicted outcome with a target shape, then differentiates the error back to candidate actions.
+
+9
+00:00:37,610 --> 00:00:41,250
+After executing an action, a new observation restarts prediction and optimization.
+
+10
+00:00:41,250 --> 00:00:47,208
+Dynamic neighborhoods follow motion; repeated messages carry local effects; hierarchy connects distant parts of an object.

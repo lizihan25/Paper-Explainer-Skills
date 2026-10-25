@@ -1,0 +1,60 @@
+{
+  "date": "2026-10-25",
+  "media": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 1920,
+        "height": 1080,
+        "r_frame_rate": "60/1",
+        "nb_frames": "3210"
+      },
+      {
+        "codec_name": "aac",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 2,
+        "r_frame_rate": "0/0",
+        "nb_frames": "2509"
+      }
+    ],
+    "format": {
+      "duration": "53.500000",
+      "size": "5446896"
+    }
+  },
+  "sha256": "a0bfcb47e1b19746218b238fe0f5c5bf002607c6a49a4105c8e06f319e63655b",
+  "audio_speed": 1.1,
+  "duration_seconds": 53.5,
+  "checked": [
+    "Complete audio/video decode",
+    "Ten actual decoded scene frames",
+    "Eight decoded locator-transition frames and 1.5-second transition excerpt",
+    "Continuous adjacent subtitle windows"
+  ],
+  "asr": {
+    "source": "alignment.json",
+    "status": "verified_with_documented_homophone",
+    "reviewable_homophone": [
+      {
+        "context": "cluster routes",
+        "display": "cluster roots",
+        "reason": "Single preview-specific homophone correction, checked against the synthesis script, paper hierarchy terminology and prior ASR of the same unsped recording; raw ASR retained."
+      }
+    ],
+    "verification": "Recorded upstream alignment result; ASR not rerun by this script"
+  },
+  "external_evidence": [
+    {
+      "file": "camera_diagnosis.json",
+      "role": "Separate B camera diagnostic",
+      "status": "Available; not rechecked by this A verification script"
+    }
+  ],
+  "visual": "Persistent original full Figure 1; 0.85-second smooth red ROI movement; native 1080p/60",
+  "voice_quality": "ASR and technical media checks do not establish subjective listening preference",
+  "scope": "Technical verification of the revised A preview only; external evidence is listed separately"
+}

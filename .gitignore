@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+skills/local-narration/config/local.json
+skills/local-narration/config/*.local.json
+skills/local-narration/outputs/

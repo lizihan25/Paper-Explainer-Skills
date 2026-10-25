@@ -1,0 +1,86 @@
+{
+  "status": "verified_with_documented_homophone",
+  "method": "ASR on actual 1.1x audio; acronym vocabulary hint only",
+  "speech_offset": 0.25,
+  "speed": 1.1,
+  "same_normalized_content_before_homophone": false,
+  "same_normalized_content_after_homophone": true,
+  "differences": [
+    {
+      "expected": [
+        "dpinet"
+      ],
+      "observed": [
+        "dpi",
+        "net"
+      ]
+    },
+    {
+      "expected": [
+        "roots"
+      ],
+      "observed": [
+        "routes"
+      ]
+    }
+  ],
+  "reviewable_homophone": [
+    {
+      "context": "cluster routes",
+      "display": "cluster roots",
+      "reason": "Single preview-specific homophone correction, checked against the synthesis script, paper hierarchy terminology and prior ASR of the same unsped recording; raw ASR retained."
+    }
+  ],
+  "sentence_words": [
+    {
+      "scene": "identity",
+      "start": 0.0,
+      "end": 8.72
+    },
+    {
+      "scene": "input",
+      "start": 9.2,
+      "end": 13.42
+    },
+    {
+      "scene": "dynamic",
+      "start": 14.02,
+      "end": 17.3
+    },
+    {
+      "scene": "local",
+      "start": 18.02,
+      "end": 21.06
+    },
+    {
+      "scene": "multistep",
+      "start": 21.74,
+      "end": 25.66
+    },
+    {
+      "scene": "hierarchy",
+      "start": 26.16,
+      "end": 31.32
+    },
+    {
+      "scene": "prediction",
+      "start": 31.96,
+      "end": 36.08
+    },
+    {
+      "scene": "gradient",
+      "start": 36.62,
+      "end": 42.1
+    },
+    {
+      "scene": "control",
+      "start": 42.8,
+      "end": 46.18
+    },
+    {
+      "scene": "takeaway",
+      "start": 47.22,
+      "end": 52.42
+    }
+  ]
+}

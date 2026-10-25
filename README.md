@@ -2,30 +2,58 @@
 
 把学术论文做成能看懂技术细节的视频和 HTML 阅读资料。讲解沿着输入、表示变化和输出展开，把关键创新单独讲透，再用原图、基线与实验判断设计的价值。
 
-**[在线比较六段样片](https://lizihan25.github.io/Paper-Explainer-Skills/examples/)** · [下载后离线观看](examples/index.html)
+**[在线查看最新预览与历史样片](https://lizihan25.github.io/Paper-Explainer-Skills/examples/)** · [下载后离线观看](examples/index.html)
 
-这套 prompt 来自论文动画与阅读页的实际制作反馈：原论文图应当占据主要画面，动画用于解释信息流、点流和迭代等动态机制；作者、年份和研究组帮助记忆，声音与字幕保持连续，导航只在需要时出现。内容要求与个人的配色、语速、BGM 等偏好分别说明，方便继续调整。
+这套 prompt 来自论文动画与阅读页的实际制作反馈：动画展开信息流、点流和迭代时，持续保留原论文总览图，用平滑红框说明当前讲到哪里；需要读图时让原图或局部大图占据主画面。作者、年份和研究组帮助记忆，声音与字幕保持连续。内容要求与个人的配色、语速、BGM 等偏好分别说明，方便继续调整。
 
 ## 直接使用
 
-选择一种用途与详细程度，把相应 prompt 连同论文、受众、范围和交付目标交给模型即可。四份 prompt 均可独立复制。
+选择一种用途与详细程度，把相应 prompt 连同论文或研究问题、受众、范围和交付目标交给模型即可。下列 prompt 均可独立复制。
 
 | 用途 | 精炼版 | 指导版 |
 | --- | --- | --- |
 | 论文视频 | [目标与制作要求](skills/paper-video/prompts/concise.md) | [研究、分镜、声音与成片衔接](skills/paper-video/prompts/guided.md) |
 | HTML 阅读资料 | [内容与阅读效果](skills/paper-reading-html/prompts/concise.md) | [资料组织、交互、资源与页面检查](skills/paper-reading-html/prompts/guided.md) |
+| 配音与双语字幕 | [配音交付要求](skills/local-narration/prompts/concise.md) | [可配置环境与完整调用](skills/local-narration/prompts/gpt.md) |
+| 文献综述与 HTML | [检索、归纳与教程目标](skills/literature-review-html/prompts/concise.md) | [从检索到综合与阅读页的指导](skills/literature-review-html/prompts/guided.md) |
 
-精炼版适合能自主规划长任务的模型；指导版补充阶段间需要衔接的内容，仍保留选题、叙事和视觉设计空间。也可以将 `skills/paper-video/` 或 `skills/paper-reading-html/` 整个目录放入支持 `SKILL.md` 的工具的技能目录。
+精炼版适合能自主规划长任务的模型；指导版补充阶段间需要衔接的内容，仍保留选题、叙事和视觉设计空间。本机使用时，把所需的整个 skill 目录复制到支持 `SKILL.md` 的工具的技能目录；Codex 常用位置是 `~/.codex/skills/`。视频和 HTML 可配合 `paper-assets`，配音可配合 `local-narration`。仅能读文件的 GPT 可准备讲稿与执行任务，实际本机渲染和配音由有本地执行权限的工具完成。
 
 例如：
 
-> 使用视频精炼 prompt，介绍这篇论文最有意思的技术设计。重点沿一个输入解释模型内的信息变化，原图为主，适合时插入动画。先做三个可直接比较的风格片段，均使用英文配音和中英文字幕。
+> 使用 $paper-video，介绍这篇论文最有意思的技术设计。沿一个输入解释模型内的信息变化，按默认 A 风格先做一段预览；用常驻原总览图与平滑红框定位。英文固定声线，1.1 倍速度，中上英下字幕。
+
+本套 DPI-Net 风格的个人优先顺序是 **A · Nocturne → C · Atlas → B · Microscope**，明确指定风格时采用指定要求。该顺序不对应下方早期 DensePhysNet 的另一组 A/B/C 编号，也不要求每次制作三套成片。
+
+## 本机配音与字幕
+
+[local-narration](skills/local-narration/SKILL.md) 复用已有 Breeze-TTS-2 / IndexTTS-2 环境，默认固定合成 F 参考、英文旁白与 1.1 倍处理，并交付双语、英文、中文 SRT 及中上英下 ASS。字幕按实际变速后音轨对齐；改变语速或剪辑后重建时间轴。
+
+首次按 [环境说明](skills/local-narration/references/local-environment.md) 配置 Python、FFmpeg、两个引擎的代码与模型、ASR 缓存路径。公开包提供示例配置，真实机器路径写入被 Git 忽略的本地配置；`--config` 可选择另一份配置。仓库不分发模型权重，也不把个人机器路径写入公共 prompt。固定 F 是合成参考，音频许可见 [第三方说明](THIRD_PARTY.md)。
+
+## 文献综述与阅读资料
+
+[literature-review-html](skills/literature-review-html/SKILL.md) 从研究问题出发检索与筛选文献，沿一手来源和引文关系补齐路线，再比较机制、实验条件、证据与缺口。Markdown 保存研究内容，HTML 提供快读、深入阅读、原图导读与人物记忆。研究发展图、教学先修路线和项目候选路线分别表达；篇数、时长和模型分工随任务决定。
+
+> 使用 $literature-review-html，围绕这个研究问题检索和归纳文献，解释各条技术路线解决了什么、证据如何、还缺什么，交付中文 Markdown 和可离线阅读的 HTML。
+
+## 动画工具如何选择
+
+数学推演、动态图形和三维仿真各有适合的工具。参见 [动画技术路线](docs/animation-routes.md)，其中比较 Manim、Motion Canvas、Remotion、After Effects、Blender、Three.js 与 Houdini，以及它们在论文讲解中的用途。
 
 ## 素材查找与选择
 
 [paper-assets](skills/paper-assets/SKILL.md) 是视频和 HTML 共用的素材研究 skill，也可以单独使用。它从每个知识点需要呈现的内容出发，寻找论文原图、补充材料、作者演示、实验录像、真实人物照片与声音素材，再比较候选的解释价值、准确性、可读性和画面适配。
 
 例如，解释模型内部的信息传递，可以用原始架构图定位，再用机制动画展示变化；讨论实验效果，则选择条件对应的作者实验片段。选定后记录出处、选择理由、具体截取位置和呈现方式。BGM 与实际旁白一起试听。四份 prompt 都包含独立可执行的素材要求；安装完整技能时，将 `skills/paper-assets/` 一并复制到技能目录。
+
+## 最新预览：A v3 持续原图定位
+
+[![新版 A：持续原图定位](examples/revised/dpi-nocturne-v3.jpg)](examples/revised/dpi-nocturne-v3.mp4)
+
+新版为 **53.50 秒、1080p60、1.1× 固定 F 英文配音**，中上英下字幕及原创轻 BGM。主画面解释机制，右上角原总览图持续保留，红框平滑移动到正在讲解的模块。需要读细节时在主区展示原图局部。
+
+[在线播放](https://lizihan25.github.io/Paper-Explainer-Skills/examples/) · [复制最新 prompts](https://lizihan25.github.io/Paper-Explainer-Skills/examples/prompts.html) · [新版源码与运行说明](source/dpi_styles_v3/REPRODUCE.md)
 
 ## 新样片：DPI-Net 信息流
 

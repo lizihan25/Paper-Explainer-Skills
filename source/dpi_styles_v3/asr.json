@@ -1,0 +1,755 @@
+{
+  "text": " DPI-Net from MIT CSAIL at ICLR 2019 learns particle dynamics for rigid bodies, deformable  objects, and fluids. Its input is a set of particles, carrying positions, velocities, and  physical attributes. Nearby particles form an interaction graph, which is rebuilt as the  scene changes. Messages pass along these edges, so each particle can respond to its neighbors.  Multiple propagation steps carry effects farther through the graph before the next physical  time step. A hierarchy adds a shortcut. Particles communicate through cluster routes, spreading  information across a whole object. The learned update predicts the next particle state, and  repeated updates produce a future trajectory. For control, the system compares that predicted  outcome with a target shape, then differentiates the error back to candidate actions. After  executing an action, a new observation restarts prediction and optimization. Dynamic neighborhoods  follow motion. Repeated messages carry local effects. Hierarchy connects distant parts  of an object.",
+  "words": [
+    {
+      "word": " DPI",
+      "start": 0.0,
+      "end": 0.44
+    },
+    {
+      "word": "-Net",
+      "start": 0.44,
+      "end": 0.72
+    },
+    {
+      "word": " from",
+      "start": 0.72,
+      "end": 1.08
+    },
+    {
+      "word": " MIT",
+      "start": 1.08,
+      "end": 1.56
+    },
+    {
+      "word": " CSAIL",
+      "start": 1.56,
+      "end": 2.56
+    },
+    {
+      "word": " at",
+      "start": 2.56,
+      "end": 2.86
+    },
+    {
+      "word": " ICLR",
+      "start": 2.86,
+      "end": 3.94
+    },
+    {
+      "word": " 2019",
+      "start": 3.94,
+      "end": 4.42
+    },
+    {
+      "word": " learns",
+      "start": 4.42,
+      "end": 5.42
+    },
+    {
+      "word": " particle",
+      "start": 5.42,
+      "end": 5.84
+    },
+    {
+      "word": " dynamics",
+      "start": 5.84,
+      "end": 6.26
+    },
+    {
+      "word": " for",
+      "start": 6.26,
+      "end": 6.52
+    },
+    {
+      "word": " rigid",
+      "start": 6.52,
+      "end": 6.76
+    },
+    {
+      "word": " bodies,",
+      "start": 6.76,
+      "end": 7.12
+    },
+    {
+      "word": " deformable",
+      "start": 7.34,
+      "end": 7.74
+    },
+    {
+      "word": " objects,",
+      "start": 7.74,
+      "end": 8.1
+    },
+    {
+      "word": " and",
+      "start": 8.36,
+      "end": 8.44
+    },
+    {
+      "word": " fluids.",
+      "start": 8.44,
+      "end": 8.72
+    },
+    {
+      "word": " Its",
+      "start": 9.2,
+      "end": 9.38
+    },
+    {
+      "word": " input",
+      "start": 9.38,
+      "end": 9.7
+    },
+    {
+      "word": " is",
+      "start": 9.7,
+      "end": 9.88
+    },
+    {
+      "word": " a",
+      "start": 9.88,
+      "end": 9.98
+    },
+    {
+      "word": " set",
+      "start": 9.98,
+      "end": 10.1
+    },
+    {
+      "word": " of",
+      "start": 10.1,
+      "end": 10.26
+    },
+    {
+      "word": " particles,",
+      "start": 10.26,
+      "end": 10.62
+    },
+    {
+      "word": " carrying",
+      "start": 10.92,
+      "end": 11.18
+    },
+    {
+      "word": " positions,",
+      "start": 11.18,
+      "end": 11.66
+    },
+    {
+      "word": " velocities,",
+      "start": 11.96,
+      "end": 12.38
+    },
+    {
+      "word": " and",
+      "start": 12.56,
+      "end": 12.64
+    },
+    {
+      "word": " physical",
+      "start": 12.64,
+      "end": 12.92
+    },
+    {
+      "word": " attributes.",
+      "start": 12.92,
+      "end": 13.42
+    },
+    {
+      "word": " Nearby",
+      "start": 14.02,
+      "end": 14.24
+    },
+    {
+      "word": " particles",
+      "start": 14.24,
+      "end": 14.58
+    },
+    {
+      "word": " form",
+      "start": 14.58,
+      "end": 14.9
+    },
+    {
+      "word": " an",
+      "start": 14.9,
+      "end": 15.04
+    },
+    {
+      "word": " interaction",
+      "start": 15.04,
+      "end": 15.44
+    },
+    {
+      "word": " graph,",
+      "start": 15.44,
+      "end": 15.78
+    },
+    {
+      "word": " which",
+      "start": 15.88,
+      "end": 15.96
+    },
+    {
+      "word": " is",
+      "start": 15.96,
+      "end": 16.08
+    },
+    {
+      "word": " rebuilt",
+      "start": 16.08,
+      "end": 16.36
+    },
+    {
+      "word": " as",
+      "start": 16.36,
+      "end": 16.58
+    },
+    {
+      "word": " the",
+      "start": 16.58,
+      "end": 16.7
+    },
+    {
+      "word": " scene",
+      "start": 16.7,
+      "end": 16.88
+    },
+    {
+      "word": " changes.",
+      "start": 16.88,
+      "end": 17.3
+    },
+    {
+      "word": " Messages",
+      "start": 18.02,
+      "end": 18.02
+    },
+    {
+      "word": " pass",
+      "start": 18.02,
+      "end": 18.38
+    },
+    {
+      "word": " along",
+      "start": 18.38,
+      "end": 18.62
+    },
+    {
+      "word": " these",
+      "start": 18.62,
+      "end": 18.82
+    },
+    {
+      "word": " edges,",
+      "start": 18.82,
+      "end": 19.14
+    },
+    {
+      "word": " so",
+      "start": 19.36,
+      "end": 19.56
+    },
+    {
+      "word": " each",
+      "start": 19.56,
+      "end": 19.74
+    },
+    {
+      "word": " particle",
+      "start": 19.74,
+      "end": 20.04
+    },
+    {
+      "word": " can",
+      "start": 20.04,
+      "end": 20.24
+    },
+    {
+      "word": " respond",
+      "start": 20.24,
+      "end": 20.52
+    },
+    {
+      "word": " to",
+      "start": 20.52,
+      "end": 20.7
+    },
+    {
+      "word": " its",
+      "start": 20.7,
+      "end": 20.82
+    },
+    {
+      "word": " neighbors.",
+      "start": 20.82,
+      "end": 21.06
+    },
+    {
+      "word": " Multiple",
+      "start": 21.74,
+      "end": 22.0
+    },
+    {
+      "word": " propagation",
+      "start": 22.0,
+      "end": 22.36
+    },
+    {
+      "word": " steps",
+      "start": 22.36,
+      "end": 22.8
+    },
+    {
+      "word": " carry",
+      "start": 22.8,
+      "end": 23.1
+    },
+    {
+      "word": " effects",
+      "start": 23.1,
+      "end": 23.44
+    },
+    {
+      "word": " farther",
+      "start": 23.44,
+      "end": 23.68
+    },
+    {
+      "word": " through",
+      "start": 23.68,
+      "end": 23.94
+    },
+    {
+      "word": " the",
+      "start": 23.94,
+      "end": 24.04
+    },
+    {
+      "word": " graph",
+      "start": 24.04,
+      "end": 24.26
+    },
+    {
+      "word": " before",
+      "start": 24.26,
+      "end": 24.52
+    },
+    {
+      "word": " the",
+      "start": 24.52,
+      "end": 24.66
+    },
+    {
+      "word": " next",
+      "start": 24.66,
+      "end": 24.86
+    },
+    {
+      "word": " physical",
+      "start": 24.86,
+      "end": 25.18
+    },
+    {
+      "word": " time",
+      "start": 25.18,
+      "end": 25.4
+    },
+    {
+      "word": " step.",
+      "start": 25.4,
+      "end": 25.66
+    },
+    {
+      "word": " A",
+      "start": 26.16,
+      "end": 26.34
+    },
+    {
+      "word": " hierarchy",
+      "start": 26.34,
+      "end": 26.68
+    },
+    {
+      "word": " adds",
+      "start": 26.68,
+      "end": 27.0
+    },
+    {
+      "word": " a",
+      "start": 27.0,
+      "end": 27.12
+    },
+    {
+      "word": " shortcut.",
+      "start": 27.12,
+      "end": 27.42
+    },
+    {
+      "word": " Particles",
+      "start": 27.96,
+      "end": 28.12
+    },
+    {
+      "word": " communicate",
+      "start": 28.12,
+      "end": 28.6
+    },
+    {
+      "word": " through",
+      "start": 28.6,
+      "end": 28.84
+    },
+    {
+      "word": " cluster",
+      "start": 28.84,
+      "end": 29.06
+    },
+    {
+      "word": " routes,",
+      "start": 29.06,
+      "end": 29.42
+    },
+    {
+      "word": " spreading",
+      "start": 29.66,
+      "end": 29.94
+    },
+    {
+      "word": " information",
+      "start": 29.94,
+      "end": 30.34
+    },
+    {
+      "word": " across",
+      "start": 30.34,
+      "end": 30.66
+    },
+    {
+      "word": " a",
+      "start": 30.66,
+      "end": 30.82
+    },
+    {
+      "word": " whole",
+      "start": 30.82,
+      "end": 30.96
+    },
+    {
+      "word": " object.",
+      "start": 30.96,
+      "end": 31.32
+    },
+    {
+      "word": " The",
+      "start": 31.96,
+      "end": 32.08
+    },
+    {
+      "word": " learned",
+      "start": 32.08,
+      "end": 32.26
+    },
+    {
+      "word": " update",
+      "start": 32.26,
+      "end": 32.6
+    },
+    {
+      "word": " predicts",
+      "start": 32.6,
+      "end": 32.88
+    },
+    {
+      "word": " the",
+      "start": 32.88,
+      "end": 33.08
+    },
+    {
+      "word": " next",
+      "start": 33.08,
+      "end": 33.24
+    },
+    {
+      "word": " particle",
+      "start": 33.24,
+      "end": 33.5
+    },
+    {
+      "word": " state,",
+      "start": 33.5,
+      "end": 33.8
+    },
+    {
+      "word": " and",
+      "start": 34.16,
+      "end": 34.26
+    },
+    {
+      "word": " repeated",
+      "start": 34.26,
+      "end": 34.5
+    },
+    {
+      "word": " updates",
+      "start": 34.5,
+      "end": 34.92
+    },
+    {
+      "word": " produce",
+      "start": 34.92,
+      "end": 35.2
+    },
+    {
+      "word": " a",
+      "start": 35.2,
+      "end": 35.4
+    },
+    {
+      "word": " future",
+      "start": 35.4,
+      "end": 35.62
+    },
+    {
+      "word": " trajectory.",
+      "start": 35.62,
+      "end": 36.08
+    },
+    {
+      "word": " For",
+      "start": 36.62,
+      "end": 36.74
+    },
+    {
+      "word": " control,",
+      "start": 36.74,
+      "end": 37.08
+    },
+    {
+      "word": " the",
+      "start": 37.32,
+      "end": 37.4
+    },
+    {
+      "word": " system",
+      "start": 37.4,
+      "end": 37.6
+    },
+    {
+      "word": " compares",
+      "start": 37.6,
+      "end": 37.98
+    },
+    {
+      "word": " that",
+      "start": 37.98,
+      "end": 38.22
+    },
+    {
+      "word": " predicted",
+      "start": 38.22,
+      "end": 38.52
+    },
+    {
+      "word": " outcome",
+      "start": 38.52,
+      "end": 38.82
+    },
+    {
+      "word": " with",
+      "start": 38.82,
+      "end": 39.04
+    },
+    {
+      "word": " a",
+      "start": 39.04,
+      "end": 39.18
+    },
+    {
+      "word": " target",
+      "start": 39.18,
+      "end": 39.36
+    },
+    {
+      "word": " shape,",
+      "start": 39.36,
+      "end": 39.64
+    },
+    {
+      "word": " then",
+      "start": 39.94,
+      "end": 40.22
+    },
+    {
+      "word": " differentiates",
+      "start": 40.22,
+      "end": 40.78
+    },
+    {
+      "word": " the",
+      "start": 40.78,
+      "end": 40.94
+    },
+    {
+      "word": " error",
+      "start": 40.94,
+      "end": 41.1
+    },
+    {
+      "word": " back",
+      "start": 41.1,
+      "end": 41.28
+    },
+    {
+      "word": " to",
+      "start": 41.28,
+      "end": 41.46
+    },
+    {
+      "word": " candidate",
+      "start": 41.46,
+      "end": 41.7
+    },
+    {
+      "word": " actions.",
+      "start": 41.7,
+      "end": 42.1
+    },
+    {
+      "word": " After",
+      "start": 42.8,
+      "end": 42.98
+    },
+    {
+      "word": " executing",
+      "start": 42.98,
+      "end": 43.4
+    },
+    {
+      "word": " an",
+      "start": 43.4,
+      "end": 43.6
+    },
+    {
+      "word": " action,",
+      "start": 43.6,
+      "end": 43.86
+    },
+    {
+      "word": " a",
+      "start": 44.12,
+      "end": 44.16
+    },
+    {
+      "word": " new",
+      "start": 44.16,
+      "end": 44.28
+    },
+    {
+      "word": " observation",
+      "start": 44.28,
+      "end": 44.68
+    },
+    {
+      "word": " restarts",
+      "start": 44.68,
+      "end": 45.18
+    },
+    {
+      "word": " prediction",
+      "start": 45.18,
+      "end": 45.54
+    },
+    {
+      "word": " and",
+      "start": 45.54,
+      "end": 45.74
+    },
+    {
+      "word": " optimization.",
+      "start": 45.74,
+      "end": 46.18
+    },
+    {
+      "word": " Dynamic",
+      "start": 47.22,
+      "end": 47.22
+    },
+    {
+      "word": " neighborhoods",
+      "start": 47.22,
+      "end": 47.52
+    },
+    {
+      "word": " follow",
+      "start": 47.52,
+      "end": 47.9
+    },
+    {
+      "word": " motion.",
+      "start": 47.9,
+      "end": 48.3
+    },
+    {
+      "word": " Repeated",
+      "start": 48.8,
+      "end": 48.98
+    },
+    {
+      "word": " messages",
+      "start": 48.98,
+      "end": 49.34
+    },
+    {
+      "word": " carry",
+      "start": 49.34,
+      "end": 49.6
+    },
+    {
+      "word": " local",
+      "start": 49.6,
+      "end": 49.88
+    },
+    {
+      "word": " effects.",
+      "start": 49.88,
+      "end": 50.26
+    },
+    {
+      "word": " Hierarchy",
+      "start": 50.76,
+      "end": 51.0
+    },
+    {
+      "word": " connects",
+      "start": 51.0,
+      "end": 51.34
+    },
+    {
+      "word": " distant",
+      "start": 51.34,
+      "end": 51.62
+    },
+    {
+      "word": " parts",
+      "start": 51.62,
+      "end": 51.86
+    },
+    {
+      "word": " of",
+      "start": 51.86,
+      "end": 52.02
+    },
+    {
+      "word": " an",
+      "start": 52.02,
+      "end": 52.1
+    },
+    {
+      "word": " object.",
+      "start": 52.1,
+      "end": 52.42
+    }
+  ]
+}

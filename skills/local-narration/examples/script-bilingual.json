@@ -1,0 +1,8 @@
+{
+  "sentences": [
+    {"paragraph": 1, "en": "The model receives the current state and a proposed action.", "zh": "模型接收当前状态和一个候选动作。"},
+    {"paragraph": 1, "en": "It predicts how the object will move.", "zh": "它预测物体接下来会怎样运动。"},
+    {"paragraph": 2, "en": "The experiment compares that prediction with the observed outcome.", "zh": "实验把预测结果与实际观测进行比较。"},
+    {"paragraph": 2, "en": "This comparison shows where the model succeeds and where it needs better evidence.", "zh": "这项对照说明模型在哪些情况下有效，以及哪里还需要更充分的证据。"}
+  ]
+}

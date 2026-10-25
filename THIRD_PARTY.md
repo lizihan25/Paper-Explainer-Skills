@@ -2,6 +2,12 @@
 
 本说明区分原创 prompt/代码、讲解视频以及视频中的素材。仓库的 MIT License 覆盖原创 prompts、文档与代码；媒体文件另按下列来源使用。记录日期：2026-10-23。
 
+## 2026-10-25 配音 skill 与预览更新
+
+`skills/local-narration/assets/reference_F.wav` 是已有 Breeze 合成 F 声线的固定参考片段，不对应特定真人。其出处、完整转录和使用条件见 [参考音频说明](skills/local-narration/assets/NOTICE.md)，该音频不采用仓库的 MIT 许可。随包附 Breeze 与 IndexTTS 模型许可副本，未分发模型权重；使用 Index 不会消除输入参考音频的条件。
+
+新版 A 沿用 DPI-Net 原图、作者照片、原始合成 F 配音和原创 *Particle Study 01* BGM，配音从未变速音轨处理为 1.1 倍。图像和声音的来源条件沿用下方对应条目；原图在右上方用于持续位置参照，主画面的粒子和消息仍是教学示意。历史六段保持原文件与原速率，新增预览独立登记。
+
 ## 历史示例 A、B、C
 
 | 内容 | 使用位置 | 来源与条件 |

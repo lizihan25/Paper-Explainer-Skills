@@ -1,0 +1,4 @@
+interface:
+  display_name: "本机配音"
+  short_description: "复用本机双 TTS 引擎与固定 F 声线，以 1.1 倍速度制作英文旁白及双语字幕"
+  default_prompt: "使用 $local-narration，把这份讲稿制作成固定 F 声线、1.1 倍速度的本地英文配音和中上英下字幕。"

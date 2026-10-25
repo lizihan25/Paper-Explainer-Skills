@@ -1,0 +1,100 @@
+{
+  "python": "${NARRATION_PYTHON}",
+  "ffmpeg": "${NARRATION_FFMPEG}",
+  "seed": 42,
+  "max_words_per_paragraph": 180,
+  "reference": {
+    "audio": "../assets/reference_F.wav",
+    "sha256": "81ebe09bf2c693af44892b4d79c96c4ed0a6d71b27baa13fd015511766dc53f3",
+    "text": "Dense Phys Net builds a persistent feature map from repeated interactions. After an action, a new visual observation updates the representation. A prediction branch combines these features with the proposed action to estimate image motion.",
+    "identity": "Synthetic F voice; fixed selected reference"
+  },
+  "engines": {
+    "breeze": {
+      "repository": "${NARRATION_TTS_ROOT}/repos/breeze-tts",
+      "model": "${NARRATION_TTS_ROOT}/models/Breeze-TTS-2",
+      "mode": "ref_clone_tata",
+      "guidance_scale": 1.0,
+      "streaming": {
+        "max_new_tokens": 2400,
+        "max_seq_len": 3072,
+        "fast_all": null,
+        "fast_backbone_decode": false,
+        "fast_depth_decoder": true,
+        "temperature": 0.9,
+        "top_k": 50,
+        "top_p": 1.0,
+        "repetition_penalty": 1.1
+      }
+    },
+    "index": {
+      "repository": "${NARRATION_TTS_ROOT}/repos/index-tts",
+      "model": "${NARRATION_TTS_ROOT}/models/IndexTTS-2",
+      "sampling": {
+        "do_sample": true,
+        "temperature": 0.8,
+        "top_k": 30,
+        "top_p": 0.8,
+        "num_beams": 3,
+        "repetition_penalty": 10.0
+      },
+      "aux_paths": {
+        "w2v_bert": "${NARRATION_TTS_ROOT}/models/IndexTTS-2/hf_cache/w2v-bert-2.0",
+        "semantic_codec": "${NARRATION_TTS_ROOT}/models/IndexTTS-2/hf_cache/semantic_codec_model.safetensors",
+        "campplus": "${NARRATION_TTS_ROOT}/models/IndexTTS-2/hf_cache/campplus_cn_common.bin",
+        "bigvgan": "${NARRATION_TTS_ROOT}/models/IndexTTS-2/hf_cache/bigvgan"
+      }
+    }
+  },
+  "processing": {
+    "speed": 1.1,
+    "speed_preference_source": "User on 2026-10-25: 1.25 is too fast; 1.1 preferred.",
+    "target_lufs": -23.0,
+    "true_peak_db": -1.5,
+    "leading_silence_seconds": 0.15,
+    "trailing_silence_seconds": 0.3,
+    "gap_seconds": 0.2
+  },
+  "pronunciations": {
+    "DensePhysNet": "Dense Phys Net",
+    "DPI-Net": "D P I Net",
+    "ICLR 2019": "I C L R twenty nineteen",
+    "MIT CSAIL": "M I T C SAIL"
+  },
+  "subtitles": {
+    "asr_cache": "${NARRATION_ASR_CACHE}",
+    "language": "en",
+    "display_order": "Chinese above English",
+    "aliases": [
+      [
+        "d p i net",
+        "dpi-net",
+        "dpinet"
+      ],
+      [
+        "d p i",
+        "dpi"
+      ],
+      [
+        "i c l r",
+        "iclr"
+      ],
+      [
+        "m i t",
+        "mit"
+      ],
+      [
+        "c sail",
+        "csail"
+      ],
+      [
+        "dense phys net",
+        "densephysnet"
+      ],
+      [
+        "twenty nineteen",
+        "2019"
+      ]
+    ]
+  }
+}

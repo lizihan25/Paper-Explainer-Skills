@@ -1,0 +1,18 @@
+{
+  "paper": {
+    "title": "Learning Particle Dynamics for Manipulating Rigid Bodies, Deformable Objects, and Fluids",
+    "venue": "ICLR 2019",
+    "team": "MIT CSAIL",
+    "url": "https://arxiv.org/abs/1810.01566",
+    "project": "https://dpi.csail.mit.edu/"
+  },
+  "assets": [
+    {"file":"dpi_net_method.png","source":"https://dpi.csail.mit.edu/imgs/method.png","role":"Persistent complete Figure 1 and enlarged Figure 1(d)","rights":"Third-party academic figure, used in attributed research commentary. Raw asset excluded from public source bundle; no blanket redistribution permission asserted."},
+    {"file":"yunzhu-li.jpg","source":"https://yunzhuli.github.io/","role":"Author identity portrait","rights":"Official author portrait. Raw asset excluded from public source bundle; no blanket redistribution permission asserted."}
+  ],
+  "narration": {"engine":"Breeze-TTS-2","mode":"ref_clone_tata","identity":"Fixed synthetic F reference; no real-person voice clone","input":"Previous unsped continuous narration_raw.wav","speed_factor":1.1,"processing":"Single pitch-preserving atempo pass and constant gain","license":"BreezeBlue Research and Non-Commercial License v1.1; retain repository THIRD_PARTY notices"},
+  "music": {"title":"Particle Study 01","tempo_bpm":78,"creator":"Original procedural composition for this project","samples":"No external samples","regenerated_for_seconds":53.5,"duck_db":5},
+  "visual_evidence":"Explanatory particle diagrams; no model inference, physical simulation or robot execution",
+  "scope":"Method information flow preview, not a full experimental review",
+  "date":"2026-10-25"
+}

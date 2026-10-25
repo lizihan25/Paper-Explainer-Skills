@@ -1,0 +1,11 @@
+{
+  "duration": 53.5,
+  "speed_factor": 1.1,
+  "source": "unsped continuous F narration_raw.wav",
+  "voice_gain_db": 2.960704348430536,
+  "music": "Particle Study 01, regenerated at 78 BPM for longer duration",
+  "music_duck_db": 5,
+  "speech_rms_dbfs": -22.981298435710478,
+  "bed_rms_dbfs": -35.33784660093767,
+  "mix_peak_dbfs": -1.7071434737674416
+}

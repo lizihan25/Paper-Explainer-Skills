@@ -1,0 +1,219 @@
+{
+  "inspected_original_video": "DPI_microscope.mp4",
+  "original_fps": 24,
+  "range_seconds": [
+    12.28,
+    14
+  ],
+  "confirmed_code_findings": [
+    "Float ROI is rounded by crop, rounded again by resize dimensions and paste coordinates.",
+    "At a new sentence, scale restarts at 0.92 after the previous sentence approaches 1.02.",
+    "At 12.32 the dynamic-graph transition begins from the input panel; transition ends about 13.185."
+  ],
+  "relative_scale_reset": 0.9019607843137255,
+  "sample_max_landmark_quantization_error_px": 1.0750704427377373,
+  "landmark_samples": [
+    {
+      "time": 13.0,
+      "quantized_x": 506.5,
+      "quantized_y": 272.13100436681225,
+      "ideal_x": 507.1074177283833,
+      "ideal_y": 273.0180332051788,
+      "error_px": 1.0750704427377373
+    },
+    {
+      "time": 13.04167,
+      "quantized_x": 541.1647855530474,
+      "quantized_y": 288.64870689655174,
+      "ideal_x": 540.5824900903151,
+      "ideal_y": 289.224269186358,
+      "error_px": 0.8187429116430055
+    },
+    {
+      "time": 13.08333,
+      "quantized_x": 565.9342403628118,
+      "quantized_y": 301.18763326226014,
+      "ideal_x": 566.420746740361,
+      "ideal_y": 301.7324083128468,
+      "error_px": 0.730389150479209
+    },
+    {
+      "time": 13.125,
+      "quantized_x": 584.2054483541431,
+      "quantized_y": 310.37209302325584,
+      "ideal_x": 584.099605187637,
+      "ideal_y": 310.28940789521135,
+      "error_px": 0.1343116014935213
+    },
+    {
+      "time": 13.16667,
+      "quantized_x": 593.1409090909091,
+      "quantized_y": 314.65822784810126,
+      "ideal_x": 592.9839489100746,
+      "ideal_y": 314.5877332131441,
+      "error_px": 0.1720639181390192
+    },
+    {
+      "time": 13.20833,
+      "quantized_x": 594.340909090909,
+      "quantized_y": 315.52631578947364,
+      "ideal_x": 593.8704503523329,
+      "ideal_y": 315.0131606075136,
+      "error_px": 0.6961750250296588
+    },
+    {
+      "time": 13.25,
+      "quantized_x": 593.7727272727273,
+      "quantized_y": 314.9578947368421,
+      "ideal_x": 593.8015006406553,
+      "ideal_y": 314.9758128470216,
+      "error_px": 0.0338963917596721
+    },
+    {
+      "time": 13.29167,
+      "quantized_x": 593.2045454545455,
+      "quantized_y": 314.9578947368421,
+      "ideal_x": 593.7305687507522,
+      "ideal_y": 314.93739140665747,
+      "error_px": 0.5264227338374251
+    },
+    {
+      "time": 13.33333,
+      "quantized_x": 593.6363636363636,
+      "quantized_y": 314.38947368421054,
+      "ideal_x": 593.6577579210731,
+      "ideal_y": 314.8979522072479,
+      "error_px": 0.5089284073506591
+    },
+    {
+      "time": 13.375,
+      "quantized_x": 594.0681818181818,
+      "quantized_y": 314.38947368421054,
+      "ideal_x": 593.5831713900669,
+      "ideal_y": 314.85755116961957,
+      "error_px": 0.674041280432416
+    },
+    {
+      "time": 13.41667,
+      "quantized_x": 593.5,
+      "quantized_y": 314.82105263157894,
+      "ideal_x": 593.5069123961831,
+      "ideal_y": 314.8162442145992,
+      "error_px": 0.00842033816681346
+    },
+    {
+      "time": 13.45833,
+      "quantized_x": 592.9318181818182,
+      "quantized_y": 315.25263157894733,
+      "ideal_x": 593.4290841778709,
+      "ideal_y": 314.77408726301337,
+      "error_px": 0.6901290699158616
+    },
+    {
+      "time": 13.5,
+      "quantized_x": 593.3636363636364,
+      "quantized_y": 315.25263157894733,
+      "ideal_x": 593.3497899735794,
+      "ideal_y": 314.73113623568884,
+      "error_px": 0.521679130843763
+    },
+    {
+      "time": 13.54167,
+      "quantized_x": 593.7954545454545,
+      "quantized_y": 314.6842105263158,
+      "ideal_x": 593.269133021758,
+      "ideal_y": 314.6874470534522,
+      "error_px": 0.5263314748465555
+    },
+    {
+      "time": 13.58333,
+      "quantized_x": 592.659090909091,
+      "quantized_y": 314.11578947368423,
+      "ideal_x": 593.1872165608557,
+      "ideal_y": 314.6430756371302,
+      "error_px": 0.7462890875615996
+    },
+    {
+      "time": 13.625,
+      "quantized_x": 593.090909090909,
+      "quantized_y": 314.11578947368423,
+      "ideal_x": 593.1041438293221,
+      "ideal_y": 314.5980779075495,
+      "error_px": 0.4824699905083067
+    },
+    {
+      "time": 13.66667,
+      "quantized_x": 593.5227272727273,
+      "quantized_y": 314.5473684210526,
+      "ideal_x": 593.0200180656062,
+      "ideal_y": 314.5525097855367,
+      "error_px": 0.5027354976058601
+    },
+    {
+      "time": 13.70833,
+      "quantized_x": 592.9545454545455,
+      "quantized_y": 314.978947368421,
+      "ideal_x": 592.9349425081573,
+      "ideal_y": 314.50642719191853,
+      "error_px": 0.4729266250794496
+    },
+    {
+      "time": 13.75,
+      "quantized_x": 592.8181818181818,
+      "quantized_y": 314.978947368421,
+      "ideal_x": 592.8490203954246,
+      "ideal_y": 314.45988604752165,
+      "error_px": 0.5199766078393936
+    },
+    {
+      "time": 13.79167,
+      "quantized_x": 593.25,
+      "quantized_y": 314.41052631578947,
+      "ideal_x": 592.7623549658574,
+      "ideal_y": 314.41294227317275,
+      "error_px": 0.4876510188382709
+    },
+    {
+      "time": 13.83333,
+      "quantized_x": 592.6818181818182,
+      "quantized_y": 313.8421052631579,
+      "ideal_x": 592.675049457905,
+      "ideal_y": 314.3656517896985,
+      "error_px": 0.5235902797762204
+    },
+    {
+      "time": 13.875,
+      "quantized_x": 592.1136363636364,
+      "quantized_y": 313.8421052631579,
+      "ideal_x": 592.5872071100164,
+      "ideal_y": 314.31807051792555,
+      "error_px": 0.6714254802827563
+    },
+    {
+      "time": 13.91667,
+      "quantized_x": 592.9772727272727,
+      "quantized_y": 314.2736842105263,
+      "ideal_x": 592.4989311606411,
+      "ideal_y": 314.27025437868053,
+      "error_px": 0.47835386286110854
+    },
+    {
+      "time": 13.95833,
+      "quantized_x": 592.409090909091,
+      "quantized_y": 314.7052631578947,
+      "ideal_x": 592.4103248482281,
+      "ideal_y": 314.2222592927902,
+      "error_px": 0.4830054412857682
+    },
+    {
+      "time": 14.0,
+      "quantized_x": 591.840909090909,
+      "quantized_y": 314.7052631578947,
+      "ideal_x": 592.3214914112268,
+      "ideal_y": 314.1741411810812,
+      "error_px": 0.7162750315739915
+    }
+  ],
+  "correction": "Direct affine sampling of the full source with float camera coordinates; constant magnification factor at sentence boundaries; preview encoded at 60 fps.",
+  "scope": "2.5-second corrected B diagnostic, not a newly rendered full B film. Quantization and scale reset are confirmed defects; they do not establish the sole cause of every reported subjective shake."
+}

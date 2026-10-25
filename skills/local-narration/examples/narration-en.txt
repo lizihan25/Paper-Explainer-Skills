@@ -1,0 +1,3 @@
+The model receives the current state and a proposed action. It predicts how the object will move.
+
+The experiment compares that prediction with the observed outcome. This comparison shows where the model succeeds and where it needs better evidence.

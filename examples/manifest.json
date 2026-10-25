@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated": "2026-10-23",
+  "updated": "2026-10-25",
   "purpose": "Paper explanation style examples for research and non-commercial demonstration",
   "historical_examples": [
     {
@@ -343,5 +343,52 @@
     ]
   },
   "total_historical_video_bytes": 23748655,
-  "total_current_video_bytes": 12348469
+  "total_current_video_bytes": 12348469,
+  "style_preference": {
+    "scope": "DPI-Net styles",
+    "order": [
+      "A-nocturne",
+      "C-atlas",
+      "B-microscope"
+    ],
+    "human_override": true
+  },
+  "revised_examples": [
+    {
+      "id": "A-v3",
+      "title": "Nocturne · Persistent original figure locator",
+      "video": "revised/dpi-nocturne-v3.mp4",
+      "poster": "revised/dpi-nocturne-v3.jpg",
+      "duration_seconds": 53.5,
+      "size_bytes": 5446896,
+      "sha256": "a0bfcb47e1b19746218b238fe0f5c5bf002607c6a49a4105c8e06f319e63655b",
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "h264",
+          "width": 1920,
+          "height": 1080,
+          "r_frame_rate": "60/1"
+        },
+        {
+          "codec_type": "audio",
+          "codec_name": "aac",
+          "r_frame_rate": "0/0",
+          "sample_rate": "48000"
+        }
+      ],
+      "narration": {
+        "engine": "Breeze TTS 2",
+        "voice": "fixed synthetic F",
+        "speed": 1.1,
+        "from_unsped_source": true,
+        "music": "Particle Study 01"
+      },
+      "subtitles": "Chinese above English",
+      "paper": "https://arxiv.org/abs/1810.01566",
+      "renderer": "Pillow float-coordinate drawing and FFmpeg",
+      "rights_record": "../THIRD_PARTY.md",
+      "source": "../source/dpi_styles_v3/REPRODUCE.md"
+    }
+  ]
 }

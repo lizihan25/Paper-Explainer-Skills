@@ -13,26 +13,36 @@
 <main>
   <div class="eyebrow">PAPER EXPLAINER · STYLE COMPARISONS</div>
   <h1>从原图走进模型的信息流</h1>
-  <p class="intro">DPI-Net 新样片用同一段 47.21 秒讲解，对比黑底机制动画、原图导览与连续纸面。输入、动态图、多轮传播、层级、预测和控制依次展开。英文统一参考声线，1.25× 节奏；中上英下字幕，加入轻背景音乐。</p>
+  <p class="intro">最新 A 版保留原论文总览图，用平滑红框标出当前模块，主画面展开机制。英文固定 F 声线改为 1.1×，中上英下字幕，配合轻背景音乐。默认风格顺序 A → C → B；人类指定时采用指定风格。</p>
+  <!-- revised-preview -->
+  <div class="links"><a href="prompts.html">查看并复制全部最新 prompts</a><a href="../source/dpi_styles_v3/REPRODUCE.md">新版可修改工程</a><a href="../source/dpi_styles_v3/bilingual.srt">新版双语字幕</a></div>
+  <section style="max-width:1100px;margin:28px 0 40px">
+    <h2>A v3 · 机制动画与持续原图定位</h2>
+    <video controls preload="metadata" playsinline poster="revised/dpi-nocturne-v3.jpg" aria-label="新版 A 持续原图定位"><source src="revised/dpi-nocturne-v3.mp4" type="video/mp4"><a href="revised/dpi-nocturne-v3.mp4">下载新版 A</a></video>
+    <p class="meta">1080p60 · 53.50 秒 · 1.1× 固定 F · 中上英下字幕 · 原创轻 BGM</p>
+  </section>
+  <h2>上一轮 DPI-Net 对照：A → C → B</h2>
+  <p>以下三片保留 47.21 秒、720p24、1.25× 的历史版本。B 保留用户指出的旧镜头问题，供对照；本次发布的主预览为上方新版 A。</p>
+  <!-- /revised-preview -->
   <div class="links"><a href="../source/dpi_styles/subtitles/bilingual.srt">双语字幕</a><a href="../source/dpi_styles/subtitles/en.srt">英文字幕</a><a href="../source/dpi_styles/subtitles/zh.srt">中文字幕</a><a href="../source/dpi_styles/README.md">源码与运行说明</a></div>
   <div class="grid">
     <article>
       <video controls preload="metadata" playsinline poster="current/dpi-nocturne.jpg" aria-label="Nocturne 黑底数学剧场"><source src="current/dpi-nocturne.mp4" type="video/mp4"><a href="current/dpi-nocturne.mp4">下载 Nocturne</a></video>
-      <h2>Nocturne · 黑底数学剧场</h2>
+      <h2>A · Nocturne · 黑底数学剧场</h2>
       <p>用语义色族和运动消息解释粒子间的影响，展开动态图、多轮传播与层级计算。</p>
       <div class="meta">720p24 · 47.21 秒 · 3.77 MB</div>
     </article>
     <article>
-      <video controls preload="metadata" playsinline poster="current/dpi-microscope.jpg" aria-label="Microscope 原图显微镜"><source src="current/dpi-microscope.mp4" type="video/mp4"><a href="current/dpi-microscope.mp4">下载 Microscope</a></video>
-      <h2>Microscope · 原图显微镜</h2>
-      <p>让原图占据主要画面，逐区定位与放大，直接把解释和论文中的部位对应起来。</p>
-      <div class="meta">720p24 · 47.21 秒 · 5.01 MB</div>
-    </article>
-    <article>
       <video controls preload="metadata" playsinline poster="current/dpi-atlas.jpg" aria-label="Atlas 纸面自由画布"><source src="current/dpi-atlas.mp4" type="video/mp4"><a href="current/dpi-atlas.mp4">下载 Atlas</a></video>
-      <h2>Atlas · 纸面自由画布</h2>
+      <h2>C · Atlas · 纸面自由画布</h2>
       <p>在连续暖色画布中移动观看位置，把输入、传播、预测与控制连接成一条可跟随的路线。</p>
       <div class="meta">720p24 · 47.21 秒 · 3.57 MB</div>
+    </article>
+    <article>
+      <video controls preload="metadata" playsinline poster="current/dpi-microscope.jpg" aria-label="Microscope 原图显微镜"><source src="current/dpi-microscope.mp4" type="video/mp4"><a href="current/dpi-microscope.mp4">下载 Microscope</a></video>
+      <h2>B · Microscope · 原图显微镜</h2>
+      <p>让原图占据主要画面，逐区定位与放大，直接把解释和论文中的部位对应起来。</p>
+      <div class="meta">720p24 · 47.21 秒 · 5.01 MB</div>
     </article>
   </div>
   <section class="note">
@@ -63,7 +73,7 @@
     <h2>论文与声音来源</h2>
     <p>新样片：Yunzhu Li et al., <a href="https://arxiv.org/abs/1810.01566">Learning Particle Dynamics for Manipulating Rigid Bodies, Deformable Objects, and Fluids</a>, ICLR 2019, MIT CSAIL。历史样片：Zhenjia Xu et al., <a href="https://arxiv.org/abs/1906.03853">DensePhysNet: Learning Dense Physical Object Representations via Multi-step Dynamic Interactions</a>, RSS 2019。</p>
     <p>英文旁白由 Breeze TTS 2 本地合成，用于研究与非商业展示。新样片的背景音乐为原创程序合成的 <em>Particle Study 01</em>，78 BPM；旁白时最多压低 5 dB。论文图表与作者照片作为署名学术讲解摘引，使用条件另列。</p>
-    <nav class="links" aria-label="相关资料"><a href="../README.md">使用说明与四份 prompt</a><a href="../THIRD_PARTY.md">素材与音频条件</a><a href="manifest.json">示例清单</a></nav>
+    <nav class="links" aria-label="相关资料"><a href="../README.md">使用说明与全部 prompt</a><a href="../THIRD_PARTY.md">素材与音频条件</a><a href="manifest.json">示例清单</a></nav>
   </section>
 </main>
 <script>

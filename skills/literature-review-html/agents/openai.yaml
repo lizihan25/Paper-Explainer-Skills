@@ -1,0 +1,4 @@
+interface:
+  display_name: "文献综述与 HTML"
+  short_description: "检索、精读和归纳多篇论文，制作带研究脉络、原图与人物的 HTML 学习资料"
+  default_prompt: "使用 $literature-review-html 调研这个主题，整理研究路线、核心机制和实验依据，并制作可离线阅读的 HTML。"

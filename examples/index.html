@@ -8,15 +8,29 @@
     :root{color-scheme:light;font-family:system-ui,-apple-system,"Segoe UI","Microsoft YaHei",sans-serif;background:#f7f6f2;color:#252b2c}
     body{margin:0;line-height:1.65}main{max-width:1450px;margin:auto;padding:40px 28px 60px}h1{font-size:clamp(28px,4vw,44px);font-weight:650;margin:0 0 14px;letter-spacing:-.035em}h2{font-size:21px;line-height:1.4;margin:18px 0 8px}p{margin:8px 0 18px}.intro{max-width:920px}.eyebrow{color:#53716d;font-size:13px;letter-spacing:.12em}a{color:#246d70;text-underline-offset:3px}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:30px}article{min-width:0}video{width:100%;display:block;background:#151719;aspect-ratio:16/9;border:1px solid #dddcd4;border-radius:7px}article p{font-size:15px;color:#525d5d}.meta{font-size:13px;color:#697471}.note{margin-top:34px;border-top:1px solid #dadbd3;padding-top:22px;max-width:1040px}.links{display:flex;gap:20px;flex-wrap:wrap;font-size:14px}a:focus-visible,video:focus-visible{outline:3px solid #e4ab4b;outline-offset:5px}@media(max-width:1000px){.grid{grid-template-columns:1fr;max-width:850px}main{padding:28px 18px}.grid article{margin-bottom:16px}}
   </style>
+  <style>
+    .style-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px;margin:22px 0 34px}.style-card{display:block;color:inherit;text-decoration:none;background:#fff;border:1px solid #ddded7;border-radius:9px;overflow:hidden}.style-card img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover}.style-card h3,.style-card p{margin:12px 15px}.style-card h3{font-size:18px;line-height:1.4}.style-card p{font-size:14px;color:#596462}.style-card .watch{color:#246d70;font-weight:600}.rank{font-size:12px;color:#6d786f}section[id],article[id]{scroll-margin-top:24px}@media(max-width:1100px){.style-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:580px){.style-grid{grid-template-columns:1fr}}
+  </style>
 </head>
 <body>
 <main>
   <div class="eyebrow">PAPER EXPLAINER · STYLE COMPARISONS</div>
   <h1>从原图走进模型的信息流</h1>
-  <p class="intro">最新 A 版保留原论文总览图，用平滑红框标出当前模块，主画面展开机制。英文固定 F 声线改为 1.1×，中上英下字幕，配合轻背景音乐。默认风格顺序 A → C → B；人类指定时采用指定风格。</p>
+  <p class="intro">默认先用机制动画讲清信息变化，论文证据导览作为次优选，尤其适合实验结果。再按内容考虑纸面自由画布与原图显微镜；人类指定风格时采用指定要求。新制作保持固定 F 英文、1.1×、中上英下字幕和轻 BGM。</p>
+  <section id="style-index" aria-label="风格效果索引">
+    <h2>忘记画风时，从这里选</h2>
+    <p>按当前优先顺序排列。两个 C 属于不同批次：早期 C 是论文证据导览，新版 C 是纸面自由画布。点击封面可跳到对应播放器。</p>
+    <div class="style-grid">
+      <a class="style-card" href="#style-mechanism"><img src="revised/dpi-nocturne-v3.jpg" alt="黑底粒子层级动画，右上保留原图与红框"><h3><span class="rank">首选 · 新版 A</span><br>机制动画＋原图定位</h3><p>点流、消息传递与迭代；动画展开机制，原图持续指示位置。</p><p class="watch">观看 Nocturne v3 ↓</p></a>
+      <a class="style-card" href="#style-evidence"><img src="previous/c-research-editorial-table.jpg" alt="论文证据导览：原始 Table II 中的实验条件与数据高亮"><h3><span class="rank">次优选 · 早期 C</span><br>论文证据导览</h3><p>结合原架构图与实验表，逐项解释条件、对照与证据；实验段优先考虑。</p><p class="watch">观看 Research Editorial ↓</p></a>
+      <a class="style-card" href="#style-atlas"><img src="current/dpi-atlas.jpg" alt="暖纸色连续画布上的层级信息流"><h3><span class="rank">第三 · 新版 C</span><br>纸面自由画布</h3><p>沿连续空间组织信息与路线；与早期 C 论文证据导览不同。</p><p class="watch">观看 Atlas ↓</p></a>
+      <a class="style-card" href="#style-microscope"><img src="current/dpi-microscope.jpg" alt="白底原论文局部图的定位与放大"><h3><span class="rank">第四 · 新版 B</span><br>原图显微镜</h3><p>在原图中平移、放大、逐区讲解。下方保留含旧镜头问题的历史版本。</p><p class="watch">观看 Microscope ↓</p></a>
+    </div>
+    <p class="meta">样片用于辨认视觉语言，历史声音设置各有不同。不同论文或语速的片段按内容比较；相同秒数不代表相同知识点。</p>
+  </section>
   <!-- revised-preview -->
   <div class="links"><a href="prompts.html">查看并复制全部最新 prompts</a><a href="../source/dpi_styles_v3/REPRODUCE.md">新版可修改工程</a><a href="../source/dpi_styles_v3/bilingual.srt">新版双语字幕</a></div>
-  <section style="max-width:1100px;margin:28px 0 40px">
+  <section id="style-mechanism" style="max-width:1100px;margin:28px 0 40px">
     <h2>A v3 · 机制动画与持续原图定位</h2>
     <video controls preload="metadata" playsinline poster="revised/dpi-nocturne-v3.jpg" aria-label="新版 A 持续原图定位"><source src="revised/dpi-nocturne-v3.mp4" type="video/mp4"><a href="revised/dpi-nocturne-v3.mp4">下载新版 A</a></video>
     <p class="meta">1080p60 · 53.50 秒 · 1.1× 固定 F · 中上英下字幕 · 原创轻 BGM</p>
@@ -32,13 +46,13 @@
       <p>用语义色族和运动消息解释粒子间的影响，展开动态图、多轮传播与层级计算。</p>
       <div class="meta">720p24 · 47.21 秒 · 3.77 MB</div>
     </article>
-    <article>
+    <article id="style-atlas">
       <video controls preload="metadata" playsinline poster="current/dpi-atlas.jpg" aria-label="Atlas 纸面自由画布"><source src="current/dpi-atlas.mp4" type="video/mp4"><a href="current/dpi-atlas.mp4">下载 Atlas</a></video>
       <h2>C · Atlas · 纸面自由画布</h2>
       <p>在连续暖色画布中移动观看位置，把输入、传播、预测与控制连接成一条可跟随的路线。</p>
       <div class="meta">720p24 · 47.21 秒 · 3.57 MB</div>
     </article>
-    <article>
+    <article id="style-microscope">
       <video controls preload="metadata" playsinline poster="current/dpi-microscope.jpg" aria-label="Microscope 原图显微镜"><source src="current/dpi-microscope.mp4" type="video/mp4"><a href="current/dpi-microscope.mp4">下载 Microscope</a></video>
       <h2>B · Microscope · 原图显微镜</h2>
       <p>让原图占据主要画面，逐区定位与放大，直接把解释和论文中的部位对应起来。</p>
@@ -62,7 +76,7 @@
       <p>把特征通道画成有深度的平面，让动作产生的卷积核进入表示，强调信息流和空间关系。</p>
       <div class="meta">Remotion · 7.65 MB</div>
     </article>
-    <article>
+    <article id="style-evidence">
       <video controls preload="metadata" playsinline poster="previous/c-research-editorial.jpg" aria-label="C 论文证据导览"><source src="previous/c-research-editorial.mp4" type="video/mp4"><a href="previous/c-research-editorial.mp4">下载 C</a></video>
       <h2>C · 论文证据导览</h2>
       <p>沿原 Fig. 3 的局部解释机制，再用 Table II 展示实验问题与结果，方便回到原论文继续阅读。</p>

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated": "2026-10-25",
+  "updated": "2026-10-26",
   "purpose": "Paper explanation style examples for research and non-commercial demonstration",
   "historical_examples": [
     {
@@ -345,13 +345,22 @@
   "total_historical_video_bytes": 23748655,
   "total_current_video_bytes": 12348469,
   "style_preference": {
-    "scope": "DPI-Net styles",
+    "scope": "Cross-generation styles, identified by full names",
     "order": [
       "A-nocturne",
+      "C-evidence",
       "C-atlas",
       "B-microscope"
     ],
-    "human_override": true
+    "labels": {
+      "A-nocturne": "机制动画与持续原图定位（新版 A）",
+      "C-evidence": "论文证据导览（早期 C）",
+      "C-atlas": "纸面自由画布（新版 C）",
+      "B-microscope": "原图显微镜（新版 B）"
+    },
+    "human_override": true,
+    "experiment_sections": "Prefer evidence-guided reading when appropriate",
+    "updated": "2026-10-26"
   },
   "revised_examples": [
     {
@@ -389,6 +398,35 @@
       "renderer": "Pillow float-coordinate drawing and FFmpeg",
       "rights_record": "../THIRD_PARTY.md",
       "source": "../source/dpi_styles_v3/REPRODUCE.md"
+    }
+  ],
+  "style_catalog": [
+    {
+      "id": "A-nocturne",
+      "anchor": "style-mechanism",
+      "video": "revised/dpi-nocturne-v3.mp4",
+      "poster": "revised/dpi-nocturne-v3.jpg"
+    },
+    {
+      "id": "C-evidence",
+      "anchor": "style-evidence",
+      "video": "previous/c-research-editorial.mp4",
+      "poster": "previous/c-research-editorial-table.jpg",
+      "poster_time_seconds": 59,
+      "poster_sha256": "397fe43eab034630928271c40b23a0e029dcedf688c1d49a5deef20c581327f0",
+      "rights_record": "../THIRD_PARTY.md"
+    },
+    {
+      "id": "C-atlas",
+      "anchor": "style-atlas",
+      "video": "current/dpi-atlas.mp4",
+      "poster": "current/dpi-atlas.jpg"
+    },
+    {
+      "id": "B-microscope",
+      "anchor": "style-microscope",
+      "video": "current/dpi-microscope.mp4",
+      "poster": "current/dpi-microscope.jpg"
     }
   ]
 }

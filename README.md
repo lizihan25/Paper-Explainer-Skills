@@ -41,6 +41,8 @@
 
 > 使用 $literature-review-html，围绕这个研究问题检索和归纳文献，解释各条技术路线解决了什么、证据如何、还缺什么，交付中文 Markdown 和可离线阅读的 HTML。
 
+涉及模型的论文同时整理规模、计算与复现条件：底座和可训练参数、训练和推理资源分别说明，代码、权重、数据与训练评测环境逐项核查并链接官方入口。未披露的信息保留具体缺项，实际发布范围与论文承诺分别记录。
+
 ## 动画工具如何选择
 
 数学推演、动态图形和三维仿真各有适合的工具。参见 [动画技术路线](docs/animation-routes.md)，其中比较 Manim、Motion Canvas、Remotion、After Effects、Blender、Three.js 与 Houdini，以及它们在论文讲解中的用途。
